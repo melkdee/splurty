@@ -24,6 +24,8 @@ default: &default
   password: password
   host: localhost
 
+  
+
 
 development:
   <<: *default
