@@ -5,37 +5,36 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rufina|Rye|Staatliches|Suez+One&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <!--nav-->
     <header class="row">
-      <div class="col-3">
-       <!--cssdeck.com | logo: copypasta-->
-       <div class="circle">
-        <br />
-        LETS 
-        <br />
-        GET
-        <br />
-        DIGITAL
-      </div> <!--/logo copypasta-->
+      <div class="col-3 logo">
+      <h1>BLURTY</h1>
+           
       </div>
-      <div class="col-4 slogan">
-        Splurting out unsolicited advice about entrepreneurship since 2019
+      <div class="col-4">
+          
       </div>
-      <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
-        <%= link_to 'About', '#' %>
-      </div>
+      <div class="col-4 links">
+        <p class="slogan">Blurting advice since 2019<i>ish</i></p>  
+        <ul class="nav">
+        <li><%= link_to 'About', about_path %></li>
+        <li><%= link_to 'Contribute', new_quote_path %></li>      
+        </ul>
 
-    </header>
-
-    <hr />
+      </div>
+    </header>    
 
      <br class="clear" />
 
     <%= yield %>
+<footer><h5>&copy; Melanie K. Dee (2019)</h5>
+</footer>
   </body>
 </html>
