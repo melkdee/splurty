@@ -10,7 +10,7 @@ class QuotesController < ApplicationController
   def create
     @quote = Quote.create(quote_params)
     if @quote.invalid?
-      flash[:error] = "<strong>Not good enough dude, not saving it</strong>"
+      flash[:error] = "<strong>Not good enough dude. Quote not saved</strong><br><p style='subtext'>Hint: Make sure your submission is between (2-140 characters)</p>"
     end
     redirect_to root_path
   end
