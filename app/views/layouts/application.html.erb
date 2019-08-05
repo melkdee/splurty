@@ -11,30 +11,46 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="bg">
     <!--nav-->
     <header class="row">
-      <div class="col-3 logo">
-      <h1>BLURTY</h1>
-           
+
+      <div class="col-3">
+        <div class="logo">
+        <h1><%= link_to 'BLURTY', root_path %></h1>    
+        </div>
       </div>
-      <div class="col-4">
-          
-      </div>
-      <div class="col-4 links">
-        <p class="slogan">Blurting advice since 2019<i>ish</i></p>  
+
+      <div class="col-9 links">
+        <!--slogan-->
+        
+        
         <ul class="nav">
         <li><%= link_to 'About', about_path %></li>
         <li><%= link_to 'Contribute', new_quote_path %></li>      
         </ul>
-
       </div>
     </header>    
 
      <br class="clear" />
 
     <%= yield %>
-<footer><h5>&copy; Melanie K. Dee (2019)</h5>
+<footer>
+  <div class="row">
+    <div class="col-md-5 text-left">
+      <h5>(?) BLURTY is a webquote generator built in Ruby</h5>
+       <p class="subtext">ADD YOUR OWN QUOTE by clicking 'Contribute' at top</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <h5>&copy; Melanie K. Dee (2019)</h5>
+      <p class="subtext"><a href="www.melkdee.com" target="blank">www.melkdee.com</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <p class="subtext">CREDITS: Developed in conjunction with University of Toronto's 2019 Coding Bootcamp by Melanie K Dick | Images: <a href="https://wallpapersafari.com/dark-wallpaper/" target="blank">WallpaperSafari</a></p> 
+      
+    </div>
+  </div>
+  
 </footer>
   </body>
 </html>
