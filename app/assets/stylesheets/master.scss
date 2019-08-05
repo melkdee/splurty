@@ -122,11 +122,16 @@ header {
 .logo h1 a {
 font-family: 'blacklistedregular', sans-serif;
 color: white;
-background-color:red;
+background-color: rgb(127, 0, 0);
 font-size: 1.5em;
 padding: 0.9em;
 text-align:center;
 display: block;
+}
+
+.logo h1 a:hover {
+  text-decoration:none;
+  background-color: red;
 }
 
 

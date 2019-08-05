@@ -16,9 +16,11 @@
     <header class="row">
 
       <div class="col-3">
+        
         <div class="logo">
-        <h1><%= link_to 'BLURTY', root_path %></h1>    
+        <h1><%= link_to 'BLURTY', root_path %></h1> 
         </div>
+        
       </div>
 
       <div class="col-9 links">
@@ -27,7 +29,9 @@
         
         <ul class="nav">
         <li><%= link_to 'About', about_path %></li>
-        <li><%= link_to 'Contribute', new_quote_path %></li>      
+        <li><%= link_to "Gimmie Another", root_path %></li>
+        <li><%= link_to 'Add New (+)', new_quote_path %></li>      
+              
         </ul>
       </div>
     </header>    
@@ -37,16 +41,16 @@
     <%= yield %>
 <footer>
   <div class="row">
-    <div class="col-md-5 text-left">
-      <h5>(?) BLURTY is a webquote generator built in Ruby</h5>
-       <p class="subtext">ADD YOUR OWN QUOTE by clicking 'Contribute' at top</p>
+    <div class="col-md-4 text-left">
+      <p class="subtext text-center">(?) BLURTY is a webquote generator built in Ruby.| HOW TO USE: Add a new quote or click 'gimmie another'</p>
     </div>
-    <div class="col-md-3 text-center">
-      <h5>&copy; Melanie K. Dee (2019)</h5>
-      <p class="subtext"><a href="www.melkdee.com" target="blank">www.melkdee.com</a></p>
+    <div class="col-md-4">
+      <h5 class="text-center">&copy; Melanie K. Dee (2019)</h5>
+      <p class="subtext text-center"><a href="www.melkdee.com" target="blank">www.melkdee.com</a></p>
     </div>
     <div class="col-md-4 text-center">
-      <p class="subtext">CREDITS: Developed in conjunction with University of Toronto's 2019 Coding Bootcamp by Melanie K Dick | Images: <a href="https://wallpapersafari.com/dark-wallpaper/" target="blank">WallpaperSafari</a></p> 
+      <p class="subtext text-center">Want to build your own Splurty Web App? <a href="https://online.bootcampspot.com">Learn how to code here</a> [Image Credits: <a href="https://wallpapersafari.com/dark-wallpaper/" target="blank">WallpaperSafari</a>]</p> 
+      </div> 
       
     </div>
   </div>
